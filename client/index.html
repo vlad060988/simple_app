@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="routeApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--Adding the  styles files to project-->
+    <link rel="stylesheet" href="/routing/bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="/routing/bower_components/components-font-awesome/css/font-awesome.css" />
+
+    <!--Adding the angular scripts-->
+    <script src="/routing/bower_components/angular/angular.js"></script>
+    <script src="/routing/bower_components/angular-route/angular-route.js"></script>
+
+</head>
+<body>
+
+<div>
+    <div data-ng-include="'app/layout/shell.html'"></div>
+    <div id="splash-page" data-ng-show="false">
+        <div class="page-splash">
+            <div class="page-splash-message">
+                The Routing example
+            </div>
+        </div>
+        <div class="progress progress-striped active page-progress-bar">
+            <div class="bar"></div>
+        </div>
+    </div>
+</div>
+<!--<header>-->
+    <!--<nav class="navbar navbar-default">-->
+        <!--<div class="container">-->
+            <!--<div class="navdar-header">-->
+                <!--<div class="navbar-brand"><a href="#">Routing App</a></div>-->
+            <!--</div>-->
+            <!--<ul class="nav navbar-nav navbar-right">-->
+                <!--<li><a href="#"><i class="fa fa-home"> Home Page</i></a></li>-->
+                <!--<li><a href="#contact"><i class="fa fa-comment"> Contact Us</i></a></li>-->
+                <!--<li><a href="#about"><i class="fa fa-shield"> About Us</i></a></li>-->
+            <!--</ul>-->
+        <!--</div>-->
+        <!--</nav>-->
+<!--</header>-->
+
+<div id="main">
+    <div class="ng-show"></div>
+</div>
+
+<!--bootstraping-->
+<script src="/routing/client/app/app.module.js"></script>
+
+
+<!-- layout -->
+<script src="app/layout/layout.module.js"></script>
+<script src="app/layout/shell.js"></script>
+<!--<script src="/src/client/app/layout/sidebar.js"></script>-->
+
+<!--core-->
+<script src="app/core/core.module.js"></script>
+
+<!-- Reusable Blocks/Modules -->
+<script src="app/blocks/router/router.module.js"></script>
+
+</body>
+</html>
